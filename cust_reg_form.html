@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer Registration Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	body{
+		background-image:url(nike.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+	#ui{
+		background-color: #333;
+		padding: 30px;
+		margin-top: 50px;
+		border-radius: 20px;
+		opacity: 1;
+	}
+	#ui label, h1{
+		color:#fff;
+	}
+</style>
+</head>
+<body>
+	<div class ="container">
+		<div class ="row">
+			<div class ="col-lg-3"></div>
+			<div class ="col-lg-6">
+				<div id="ui">
+					<h1 class="text-center">Registration Form</h1>
+					<form class = "form-group text-center">
+						<div class ="row">
+							<div class ="col-lg-6">
+								<label>First Name:</label>
+								<input type="text" name="fname" class="form-control" placeholder="Enter Your First Name">
+							</div>
+							<div class ="col-lg-6">
+								<label>Last Name:</label>
+								<input type="text" name="lname" class="form-control" placeholder="Enter Your Last Name">
+							</div>
+							
+						</div>
+						<br>
+						<label>E-mail</label>
+						<input type="email" name="email" class="form-control"placeholder="Enter Your Email">
+
+						<div class ="row">
+							<div class ="col-lg-6">
+								<label>Password:</label>
+								<input type="password" name="fname" class="form-control" placeholder="Enter Your Password">
+							</div>
+							<br>
+							<div class ="col-lg-6">
+								<label>Retype Password:</label>
+								<input type="password" name="lname" class="form-control" placeholder="Retype Your Password">
+							</div>
+							<br>
+						</div>
+						<br>
+						<label>Phone Number:</label>
+						<select id="select-contry">
+							<option value="60">MY</option>
+							<option value="61">AUS</option>
+							<option value="62">IND</option>
+							<option value="63">NZ</option>
+						</select>
+						<input id ="input phone" type="text"class="form-control" placeholder="Enter Your Phone Number"/>
+						<br>
+						<br>
+						<select class="form-control">
+							<option>Select your Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+							<option>Custom</option>
+						</select>
+						<br>
+						<input type="Submit" name="Submit" value="Submit" class= "btn btn-primary btn-block btn-lg">
+						<br>
+					</form>
+				</div>
+			</div>
+			<div class ="col-lg-3"></div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
